@@ -11,7 +11,7 @@ provider "aws" {
 }
 
 # module for creating a website using an s3 bucket
-module "website-s3-bucket" {
+module "static-website" {
   source  = "app.terraform.io/Firsts/s3-static-website/s3"
   version = "1.0.0"
   config = {
